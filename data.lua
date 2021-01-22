@@ -1,0 +1,6 @@
+require("prototypes.categories")
+require("prototypes.categories_machinery")
+require("prototypes.categories_C&R")
+require("prototypes.categories_Railworld")
+require("prototypes.lab")
+require("prototypes.technology")
