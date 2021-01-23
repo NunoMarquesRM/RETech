@@ -1315,6 +1315,7 @@ data:extend({
 local logistic_tech_r1 = table.deepcopy(data.raw.technology['logistics'])
 logistic_tech_r1.name = "logistics-r1"
 logistic_tech_r1.icon = "__RETech__/graphics/technology/Logistic/logistics-r1.png"
+logistic_tech_r1.icon_size = 128
 logistic_tech_r1.effects = {
 	{
 		type = "unlock-recipe",
@@ -1348,6 +1349,7 @@ logistic_tech_bug.unit.time = 10
 local logistic_tech_r2 = table.deepcopy(data.raw.technology['logistics'])
 logistic_tech_r2.name = "logistics-r2"
 logistic_tech_r2.icon = "__RETech__/graphics/technology/Logistic/logistics-r2.png"
+logistic_tech_r2.icon_size = 128
 logistic_tech_r2.effects = {
 	{
 		type = "unlock-recipe",
@@ -1377,6 +1379,7 @@ data:extend({logistic_tech_r1,logistic_tech_bug,logistic_tech_r2})
 local acc_tech_r2 = table.deepcopy(data.raw.technology['electric-energy-accumulators'])
 acc_tech_r2.name = "energy-accumulator-r1"
 acc_tech_r2.icon = "__RETech__/graphics/technology/Energy/electric-energy-acumulators-r2.png"
+acc_tech_r2.icon_size = 128
 acc_tech_r2.effects = {
 {
 	type = "unlock-recipe",
@@ -1400,6 +1403,7 @@ acc_tech_r2.order = "c-h-a"
 local acc_tech_r3 = table.deepcopy(data.raw.technology['electric-energy-accumulators'])
 acc_tech_r3.name = "energy-accumulator-r2"
 acc_tech_r3.icon = "__RETech__/graphics/technology/Energy/electric-energy-acumulators-r3.png"
+acc_tech_r3.icon_size = 128
 acc_tech_r3.effects = {{
 	type = "unlock-recipe",
 	recipe = "accumulator-r3"
@@ -1420,6 +1424,7 @@ data:extend({acc_tech_r2,acc_tech_r3})
 local mining_tech_r1 = table.deepcopy(data.raw.technology['steel-processing'])
 mining_tech_r1.name = "electric-mining-r2"
 mining_tech_r1.icon = "__RETech__/graphics/technology/Machinery/r-08.png"
+mining_tech_r1.icon_size = 128
 mining_tech_r1.effects = {{
 	type = "unlock-recipe",
 	recipe = "mining-drill-r2"
@@ -1440,6 +1445,7 @@ data:extend({mining_tech_r1})
 local mining_tech_r2 = table.deepcopy(data.raw.technology['electric-mining-r2'])
 mining_tech_r2.name = "electric-mining-r3"
 mining_tech_r2.icon = "__RETech__/graphics/technology/Machinery/r-09.png"
+mining_tech_r2.icon_size = 128
 mining_tech_r2.effects = {{
 	type = "unlock-recipe",
 	recipe = "mining-drill-r3"
@@ -1463,6 +1469,7 @@ data:extend({mining_tech_r2})
 local sto_tank_tech_r1 = table.deepcopy(data.raw.technology['fluid-handling'])
 sto_tank_tech_r1.name = "big-storage-tank-r1"
 sto_tank_tech_r1.icon = "__RETech__/graphics/technology/Storage/big-storage-tank-r1.png"
+sto_tank_tech_r1.icon_size = 128
 sto_tank_tech_r1.prerequisites = {"fluid-handling"}
 sto_tank_tech_r1.effects = {{
 	type = "unlock-recipe",
@@ -1482,6 +1489,7 @@ sto_tank_tech_r1.order = "c-e-f"
 local sto_tank_tech_r2 = table.deepcopy(data.raw.technology['fluid-handling'])
 sto_tank_tech_r2.name = "big-storage-tank-r2"
 sto_tank_tech_r2.icon = "__RETech__/graphics/technology/Storage/big-storage-tank-r2.png"
+sto_tank_tech_r2.icon_size = 128
 sto_tank_tech_r2.prerequisites = {"production-science-pack"}
 sto_tank_tech_r2.effects = {{
 	type = "unlock-recipe",
@@ -1549,6 +1557,7 @@ data:extend({furnace_tech_r1,furnace_tech_r2})
 local tech_r1 = table.deepcopy(data.raw.technology['solar-energy'])
 tech_r1.name = "silicon-processing"
 tech_r1.icon = "__RETech__/graphics/technology/C&R/silicon-processing.png"
+tech_r1.icon_size = 128
 tech_r1.effects = {
 	{
 		type = "unlock-recipe",
