@@ -25,11 +25,11 @@ data:extend({
 		group = "satisfactory-extends",
 		order = "c",
 	},
-	{--Concrete
+	{--Space Elevator
 		type = "item-subgroup",
-		name = "concrete-extends",
+		name = "space-elevator-extends",
 		group = "satisfactory-extends",
-		order = "d",
+		order = "x",
 	},
 	{--Tier 2
 		type = "item-subgroup",
