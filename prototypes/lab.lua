@@ -304,7 +304,7 @@ sLab.inputs = {
 	"military-science-pack",
 	"production-science-pack",
 	"utility-science-pack",
-	"space-science-pack"		  
+	"space-science-pack"
 }
 
 
