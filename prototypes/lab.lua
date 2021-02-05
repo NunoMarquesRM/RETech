@@ -13,7 +13,7 @@ item_r1.name = "lab-r2"
 item_r1.icon = "__RETech__/graphics/icons/r2.png"
 item_r1.icon_size = 32
 item_r1.subgroup = "machinery-lab"
-item_r1.order = "g-a"
+item_r1.order = "g-b"
 item_r1.place_result = "lab-r2"
 
 local r1 = table.deepcopy(data.raw['lab']['lab'])
@@ -155,6 +155,174 @@ r1.inputs = {
 }
 
 data:extend({recipe_r1,item_r1,r1})
+
+-------------------------------------------------------------
+--- Lab Satisfactory
+
+local recipe_satisfactory_lab = table.deepcopy(data.raw.recipe['lab'])
+recipe_satisfactory_lab.name = "satisfactory-lab"
+recipe_satisfactory_lab.icon = "__RETech__/graphics/icons/satisfactory-lab.png"
+recipe_satisfactory_lab.icon_size = 64
+recipe_satisfactory_lab.icon_mipmaps = 4
+recipe_satisfactory_lab.energy_required = 4
+recipe_satisfactory_lab.enabled = false
+recipe_satisfactory_lab.ingredients = {
+	{"lab", 1},
+	{"electronic-circuit", 5}
+}
+recipe_satisfactory_lab.result = "satisfactory-lab"
+
+
+local item_satisfactory_lab = table.deepcopy(data.raw.item['lab'])
+item_satisfactory_lab.name = "satisfactory-lab"
+item_satisfactory_lab.icon = "__RETech__/graphics/icons/satisfactory-lab.png"
+item_satisfactory_lab.icon_size = 64
+item_satisfactory_lab.icon_mipmaps = 4
+item_satisfactory_lab.subgroup = "machinery-lab"
+item_satisfactory_lab.order = "g-a"
+item_satisfactory_lab.place_result = "satisfactory-lab"
+
+
+local sLab = table.deepcopy(data.raw['lab']['lab'])
+sLab.name = "satisfactory-lab"
+sLab.icon = "__RETech__/graphics/icons/satisfactory-lab.png"
+sLab.icon_size = 64
+sLab.icon_mipmaps = 4
+sLab.minable.result = "satisfactory-lab"
+sLab.max_health = 350
+sLab.selection_box = {{-1.5,-1.5}, {1.5,1.5}}
+sLab.on_animation = {
+	layers = {
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab-shadow.png",
+			width = 256,
+			height = 238,
+			frame_count = nil,
+			line_length = nil,
+			shift = util.by_pixel(0.5, 0),
+			scale = 0.5,
+			draw_as_shadow = true,
+			repeat_count = 60,
+			animation_speed = 0.5
+		},
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab1-shadow.png",
+			width = 160,
+			height = 160,
+			frame_count = 60,
+			line_length = 10,
+			shift = util.by_pixel(2.25, 0.25),
+			scale = 0.5,
+			draw_as_shadow = true,
+			repeat_count = nil,
+			animation_speed = 0.5
+		},
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab.png",
+			width = 238,
+			height = 238,
+			frame_count = nil,
+			line_length = nil,
+			shift = util.by_pixel(0, 0),
+			scale = 0.5,
+			draw_as_shadow = false,
+			repeat_count = 60,
+			animation_speed = 0.5
+		},
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab1.png",
+			width = 192,
+			height = 192,
+			frame_count = 60,
+			line_length = 10,
+			shift = util.by_pixel(0, -18),
+			scale = 0.5,
+			draw_as_shadow = false,
+			repeat_count = nil,
+			animation_speed = 0.5
+		}
+	}
+}
+sLab.off_animation = {
+	layers = {
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab-shadow.png",
+			width = 256,
+			height = 238,
+			frame_count = nil,
+			line_length = nil,
+			shift = util.by_pixel(0.5, 0),
+			scale = 0.5,
+			draw_as_shadow = true,
+			repeat_count = 60,
+			animation_speed = 0.5
+		},
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab1-shadow.png",
+			width = 160,
+			height = 160,
+			frame_count = 60,
+			line_length = 10,
+			shift = util.by_pixel(5.25, 0.25),
+			scale = 0.5,
+			draw_as_shadow = true,
+			repeat_count = nil,
+			animation_speed = 0.5
+		},
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab.png",
+			width = 238,
+			height = 238,
+			frame_count = nil,
+			line_length = nil,
+			shift = util.by_pixel(0, 0),
+			scale = 0.5,
+			draw_as_shadow = false,
+			repeat_count = 60,
+			animation_speed = 0.5
+		},
+		{
+			filename = "__RETech__/graphics/entity/satisfactory/satisfactory-lab1.png",
+			width = 192,
+			height = 192,
+			frame_count = 60,
+			line_length = 10,
+			shift = util.by_pixel(0, -18),
+			scale = 0.5,
+			draw_as_shadow = false,
+			repeat_count = nil,
+			animation_speed = 0.5
+		}
+	}
+}
+sLab.energy_usage = "0.250MW"
+sLab.researching_speed = 1
+sLab.inputs = {
+	"automation-science-pack",
+	"logistic-science-pack",
+	"chemical-science-pack",
+	"military-science-pack",
+	"production-science-pack",
+	"utility-science-pack",
+	"space-science-pack"		  
+}
+
+
+data:extend({recipe_satisfactory_lab,item_satisfactory_lab,sLab})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --[[if (mods['NPUtilsTech']) then 
 data.raw["lab"]["lab-r1"].inputs = {
