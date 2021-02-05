@@ -105,6 +105,40 @@ data:extend({
 		time = 15
 	},
 	order = "s-a-d"
+},
+{--Tier 2
+	type = "technology",
+	name = "tier2",
+	icon_size = 128,
+	icon = "__RETech__/graphics/technology/Satisfactory/tier2.png",
+	effects = {
+		{
+			type = "unlock-recipe",
+			recipe = "copper-sheet-sat1"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "rotor-sat1"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "modular-frame-sat1"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "smart-plating-sat1"
+		}
+	},
+	prerequisites = {"tier0-upgrade3"},
+	unit = {
+		count = 50,
+		ingredients = {
+			{"automation-science-pack", 1}
+		},
+		time = 15
+	},
+	order = "s-a-d"
 }
+
 
 })
