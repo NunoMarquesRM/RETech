@@ -881,10 +881,6 @@ data:extend({
 		{
 			type = "unlock-recipe",
 			recipe = "copper-plate-r1v1"
-		},
-		{
-			type = "unlock-recipe",
-			recipe = "steel-plate-r1v1"
 		}
     },
 	prerequisites = {"automation-2","adv-products-r1"},
@@ -1523,6 +1519,10 @@ furnace_tech_r1.effects = {
 	{
 		type = "unlock-recipe",
 		recipe = "formation-furnace-r1"
+	},
+	{
+		type = "unlock-recipe",
+		recipe = "steel-plate-r1v1"
 	}
 }
 furnace_tech_r1.prerequisites = {"electronics"}
