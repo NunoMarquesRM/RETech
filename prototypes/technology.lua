@@ -1305,6 +1305,27 @@ data:extend({
     },
     order = "a-c-d"
 },
+{
+	type = "technology",
+	name = "plastics-r1",
+	icon_size = 256, icon_mipmaps = 4,
+	icon = "__base__/graphics/technology/plastics.png",
+	prerequisites = {"plastics","refined-coal-r1"},
+	effects =
+	{
+		{
+		type = "unlock-recipe",
+		recipe = "plastic-bar-r1"
+		}
+	},
+	unit =
+	{
+		count = 220,
+		ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+		time = 30
+	},
+	order = "d-f"
+},
 
 })
 --Logistics R1 (wood)--

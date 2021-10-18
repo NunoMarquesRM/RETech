@@ -1,11 +1,11 @@
 {
 	"name": "RETech",
-	"version": "0.3.4",
+	"version": "0.3.5",
 	"title": "Red Extended Tech",
 	"author": "RedMike-PT",
 	"contact": "",
 	"homepage": "https://github.com/NunoMarquesRM/RETech",
 	"factorio_version": "1.1.0",
-	"dependencies": ["base >= 1.1.19", "RExtended >= 0.3.4", "RERailworld >= 0.2.2"],
+	"dependencies": ["base >= 1.1.42", "RExtended >= 0.3.4", "RERailworld >= 0.2.2"],
 	"description": "Tech tree of the Red Extended mods."
 }
