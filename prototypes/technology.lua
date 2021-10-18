@@ -1342,35 +1342,7 @@ logistic_tech_bug.prerequisites = {"logistics-2"}
 logistic_tech_bug.unit.count = 50
 logistic_tech_bug.unit.time = 10
 
-local logistic_tech_r2 = table.deepcopy(data.raw.technology['logistics'])
-logistic_tech_r2.name = "logistics-r2"
-logistic_tech_r2.icon = "__RETech__/graphics/technology/Logistic/logistics-r2.png"
-logistic_tech_r2.icon_size = 128
-logistic_tech_r2.effects = {
-	{
-		type = "unlock-recipe",
-		recipe = "transport-belt-r2"
-	},
-	{
-		type = "unlock-recipe",
-		recipe = "underground-belt-r2"
-	},
-	{
-		type = "unlock-recipe",
-		recipe = "splitter-r2"
-	}
-}
-logistic_tech_r2.unit.count = 500
-logistic_tech_r2.unit.ingredients = {
-	{"automation-science-pack",1},
-	{"logistic-science-pack",1},
-	{"chemical-science-pack",1}
-}
-logistic_tech_r2.unit.time = 30
-logistic_tech_r2.prerequisites = {"logistics-2","advanced-electronics"}
-logistic_tech_r2.order = "c-d-b"
-
-data:extend({logistic_tech_r1,logistic_tech_bug,logistic_tech_r2})
+data:extend({logistic_tech_r1,logistic_tech_bug})
 --Energy Accumulator R1--
 local acc_tech_r2 = table.deepcopy(data.raw.technology['electric-energy-accumulators'])
 acc_tech_r2.name = "energy-accumulator-r1"
