@@ -19,9 +19,9 @@ data:extend({
 		group = "c&r",
 		order = "b",
 	},
-	{--Intermediate Products
+	{--Plates
 		type = "item-subgroup",
-		name = "inter-products",
+		name = "plates",
 		group = "c&r",
 		order = "c",
 	},
@@ -29,19 +29,19 @@ data:extend({
 		type = "item-subgroup",
 		name = "reinforced-products",
 		group = "c&r",
-		order = "d",
+		order = "i",
 	},
 	{--Solar Panels Products
 		type = "item-subgroup",
 		name = "solar-products",
 		group = "c&r",
-		order = "e",
+		order = "j",
 	},
 	{--Accumulators Products
 		type = "item-subgroup",
 		name = "accumulators-products",
 		group = "c&r",
-		order = "f",
+		order = "k",
 	},
 	{--Wood Products
 		type = "item-subgroup",
