@@ -13,23 +13,29 @@ data:extend({
 		group = "power-extends",
 		order = "a",
 	},
-	{--Boiler && Steam Engines
+	{--Boiler
+		type = "item-subgroup",
+		name = "power-boilers",
+		group = "power-extends",
+		order = "b",
+	},
+	{--Steam Engines
 		type = "item-subgroup",
 		name = "power-steam",
 		group = "power-extends",
-		order = "b",
+		order = "c",
 	},
 	{--Solar Panels
 		type = "item-subgroup",
 		name = "power-solar",
 		group = "power-extends",
-		order = "c",
+		order = "g",
 	},
 	{--Accumulator
 		type = "item-subgroup",
 		name = "power-energy",
 		group = "power-extends",
-		order = "d",
+		order = "h",
 	},
 	{--Transport Belt
 		type = "item-subgroup",
