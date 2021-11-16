@@ -972,7 +972,7 @@ data:extend({
     },
     order = "a-c-e"
 },
-{--Advanced Chemical Machine--
+{--Advanced Chemical Machine R1--
     type = "technology",
     name = "adv-chemical-machine-r1",
     icon_size = 128,
@@ -1305,7 +1305,7 @@ data:extend({
     },
     order = "a-c-d"
 },
-{
+{--Plastics R1--
 	type = "technology",
 	name = "plastics-r1",
 	icon_size = 256, icon_mipmaps = 4,
@@ -1326,7 +1326,31 @@ data:extend({
 	},
 	order = "d-f"
 },
-
+{--Advanced Chemical Machine R2--
+    type = "technology",
+    name = "adv-chemical-machine-r2",
+    icon_size = 128,
+    icon = "__RETech__/graphics/technology/Machinery/r-07-1.png",
+    effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "chemical-machine-r2"
+		}
+    },
+	prerequisites = {"adv-chemical-machine-r1"},
+    unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+    },
+    order = "a-f-f"
+},
 })
 --Logistics R1 (wood)--
 local logistic_tech_r1 = table.deepcopy(data.raw.technology['logistics'])
