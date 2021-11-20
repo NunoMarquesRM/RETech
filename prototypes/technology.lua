@@ -921,7 +921,7 @@ data:extend({
     },
     order = "a-f-e"
 },
-{--Advanced Ore Processing--
+{--Advanced Ore Processing R1--
     type = "technology",
     name = "adv-ore-processing-r1",
     icon_size = 128,
@@ -1350,6 +1350,114 @@ data:extend({
 		time = 40
     },
     order = "a-f-f"
+},
+{--Advanced Clean Products R2--
+    type = "technology",
+    name = "adv-clean-products-r2",
+    icon_size = 128,
+    icon = "__RETech__/graphics/technology/Machinery/r-01-1.png",
+    effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "compressor-r2"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "washer-chamber-r2"
+		}
+    },
+	prerequisites = {"clean-products-r1"},
+    unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+    },
+    order = "a-f-g"
+},
+{--Advanced Ore Processing R2--
+    type = "technology",
+    name = "adv-ore-processing-r2",
+    icon_size = 128,
+    icon = "__RETech__/graphics/technology/Machinery/r-05-1.png",
+    effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "cast-chamber-r2"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "heat-forge-chamber-r2"
+		}
+    },
+	prerequisites = {"adv-ore-processing-r1"},
+    unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+    },
+    order = "a-f-h"
+},
+{--Advanced Water Condenser--
+    type = "technology",
+    name = "adv-water-r2",
+    icon_size = 128,
+    icon = "__RETech__/graphics/technology/Machinery/r-04-1.png",
+    effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "water-condenser-electric-r2"
+		}
+    },
+	prerequisites = {"water-product-r1"},
+    unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+    },
+    order = "a-f-h"
+},
+{--Advanced Water Condenser--
+    type = "technology",
+    name = "adv-machinery-r2",
+    icon_size = 128,
+    icon = "__RETech__/graphics/technology/Assemblers/machinery-r1-1.png",
+    effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "half-assembler-r2"
+		}
+    },
+	prerequisites = {"machinery-r1"},
+    unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+    },
+    order = "a-f-i"
 },
 })
 --Logistics R1 (wood)--
