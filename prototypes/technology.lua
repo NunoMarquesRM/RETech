@@ -995,7 +995,7 @@ data:extend({
     },
     order = "a-f-e"
 },
-{--Refinery--
+{--Refinery R1--
     type = "technology",
     name = "refinery-machine-r1",
     icon_size = 128,
@@ -1458,6 +1458,31 @@ data:extend({
 		time = 40
     },
     order = "a-f-i"
+},
+{--Refinery R2--
+    type = "technology",
+    name = "refinery-machine-r2",
+    icon_size = 128,
+    icon = "__RETech__/graphics/technology/Machinery/r-03-1.png",
+    effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "refinery-r2"
+		}
+    },
+	prerequisites = {"refinery-machine-r1"},
+    unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+    },
+    order = "a-f-j"
 },
 })
 --Logistics R1 (wood)--
