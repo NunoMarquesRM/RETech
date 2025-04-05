@@ -3,10 +3,10 @@ recipe_r1.name = "lab-r2"
 recipe_r1.energy_required = 4
 recipe_r1.enabled = false
 recipe_r1.ingredients = {
-	{"lab", 6},
-	{"electronic-circuit", 10}
+	{type = "item", name = "lab", amount = 6},
+	{type = "item", name = "electronic-circuit", amount = 10}
 }
-recipe_r1.result = "lab-r2"
+recipe_r1.results = {{type="item", name="lab-r2", amount=1}}
 
 local item_r1 = table.deepcopy(data.raw.item['lab'])
 item_r1.name = "lab-r2"
@@ -167,10 +167,10 @@ recipe_satisfactory_lab.icon_mipmaps = 4
 recipe_satisfactory_lab.energy_required = 4
 recipe_satisfactory_lab.enabled = false
 recipe_satisfactory_lab.ingredients = {
-	{"lab", 1},
-	{"electronic-circuit", 5}
+	{type = "item", name = "lab", amount = 1},
+	{type = "item", name = "electronic-circuit", amount = 5}
 }
-recipe_satisfactory_lab.result = "satisfactory-lab"
+recipe_satisfactory_lab.results = {{type="item", name="satisfactory-lab", amount=1}}
 
 
 local item_satisfactory_lab = table.deepcopy(data.raw.item['lab'])
